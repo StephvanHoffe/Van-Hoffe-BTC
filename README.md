@@ -43,27 +43,27 @@ In de pagina's, `robots.txt` en `sitemap.xml` is uitgegaan van het domein
 `https://vanhoffe-btc.nl/`. Gebruik je een ander domein (bijvoorbeeld met `www.`), pas dat dan
 op die plekken aan.
 
-## Controleren vóór livegang
+## Kwaliteit & registraties
 
-De sectie *Kwaliteit & registraties* stelt dat aan onderstaande eisen wordt voldaan. Controleer
-dat dit klopt en houd het actueel:
+De sectie *Kwaliteit & registraties* stelt dat aan onderstaande eisen wordt voldaan. Dit is
+bevestigd in oktober 2026; houd het actueel (bijvoorbeeld bij een nieuwe VOG of verzekering):
 
-- [ ] KVK-inschrijving (89513908)
-- [ ] CRKBO-registratie – staat de inschrijving in het **Instellingenregister**? Alleen dan zijn
-      trainingen die je rechtstreeks aan zorgorganisaties geeft vrijgesteld van btw. Bij het
-      Docentenregister geldt de vrijstelling alleen als je lesgeeft via een geregistreerde
-      onderwijsinstelling; pas dan de tekst bij Diensten en Kwaliteit aan.
-- [ ] MBO-4 diploma Persoonlijk begeleider gehandicaptenzorg
-- [ ] Geldige VOG voor de zorg
-- [ ] Melding als zorgaanbieder bij het CIBG (Wtza-meldplicht, ook voor zzp'ers in onderaanneming)
-- [ ] Wkkgz: klachtenregeling, klachtenfunctionaris en aansluiting bij een erkende
-      geschilleninstantie. Vul bij voorkeur de naam en contactgegevens van de
-      geschilleninstantie en klachtenfunctionaris in op `klachtenregeling.html`.
-- [ ] Beroeps- en bedrijfsaansprakelijkheidsverzekering
-- [ ] Eigen meldcode huiselijk geweld en kindermishandeling
-- [ ] Werken volgens de Wet zorg en dwang (Wzd)
-- [ ] AVG: zorgvuldige omgang met (cliënt)gegevens
-- [ ] Wet DBA: werken op basis van een overeenkomst van opdracht
+- [x] KVK-inschrijving (89513908)
+- [x] CRKBO-registratie (register Docenten). Let op: de btw-vrijstelling geldt alleen voor
+      trainingen die je in opdracht van een onderwijsinstelling geeft. Trainingen die je
+      rechtstreeks aan een zorgorganisatie geeft, vallen er niet onder. De teksten op de site
+      zijn hierop afgestemd.
+- [x] MBO-4 diploma Persoonlijk begeleider gehandicaptenzorg
+- [x] Geldige VOG voor de zorg
+- [x] Melding als zorgaanbieder bij het CIBG (Wtza-meldplicht, ook voor zzp'ers in onderaanneming)
+- [x] Wkkgz: klachtenregeling, klachtenfunctionaris en erkende geschilleninstantie via
+      ZZP-erindezorg.nl. De namen van de klachtenfunctionaris en de geschilleninstantie staan
+      op het aansluitcertificaat; die kun je eventueel nog toevoegen op `klachtenregeling.html`.
+- [x] Beroeps- en bedrijfsaansprakelijkheidsverzekering
+- [x] Eigen meldcode huiselijk geweld en kindermishandeling
+- [x] Werken volgens de Wet zorg en dwang (Wzd)
+- [x] AVG: zorgvuldige omgang met (cliënt)gegevens
+- [x] Wet DBA: werken op basis van een overeenkomst van opdracht
 
 Optioneel om toe te voegen als je die hebt: AGB-code, btw-nummer, keurmerk (bijv. Kiwa),
 BHV/EHBO-certificaat.
