@@ -15,7 +15,7 @@ klachtenregeling.html    Klachtenregeling (Wkkgz)
 assets/css/style.css     Alle opmaak; kleuren staan bovenaan als variabelen (:root)
 assets/js/main.js        Mobiel menu, actieve menu-item, jaartal in de footer
 assets/fonts/            Inter en Inter Tight, lokaal gehost (geen Google Fonts, geen cookies)
-assets/img/              Portretfoto (zwart-wit) en deelafbeelding voor social media
+assets/img/              Portretfoto (zwart-wit), deelafbeelding en beelden van de app Je Dag in Beeld
 favicon.svg, apple-touch-icon.png, robots.txt, sitemap.xml
 ```
 
