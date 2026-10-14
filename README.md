@@ -15,7 +15,9 @@ privacyverklaring.html   Privacyverklaring (AVG)
 klachtenregeling.html    Klachtenregeling (Wkkgz)
 404.html                 Pagina voor adressen die niet bestaan
 vercel.json              Vercel-instellingen: geen build-stap, beveiligingsheaders, caching
-.vercelignore            Bestanden die niet online komen (deze README)
+.vercelignore            Bestanden die niet online komen (deze README en huisstijl/)
+huisstijl/logo/          Logo als PNG (lichte en donkere achtergrond) en los beeldmerk
+huisstijl/briefpapier/   Briefpapier: Word-sjabloon en blanco PDF voor de drukker
 assets/css/style.css     Alle opmaak; kleuren staan bovenaan als variabelen (:root)
 assets/js/main.js        Mobiel menu, actieve menu-item, jaartal in de footer
 assets/fonts/            Inter en Inter Tight, lokaal gehost (geen Google Fonts, geen cookies)
