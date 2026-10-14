@@ -3,8 +3,9 @@
 Website van Steph van Hoffe (Van Hoffe BTC): begeleider en coördinerend begeleider in de
 gehandicaptenzorg en CRKBO-geregistreerd trainer agressie en weerbaarheid.
 
-Een statische website: HTML, CSS en een klein beetje JavaScript, zonder build-stap. Hij werkt
-op elke webhost (bijvoorbeeld GitHub Pages, Netlify of een gewone hostingpartij).
+Een statische website: HTML, CSS en een klein beetje JavaScript, zonder build-stap. De site is
+ingericht voor [Vercel](https://vercel.com) (zie *Online zetten via Vercel*), maar werkt op elke
+webhost.
 
 ## Structuur
 
@@ -12,6 +13,9 @@ op elke webhost (bijvoorbeeld GitHub Pages, Netlify of een gewone hostingpartij)
 index.html               Homepage (diensten, over mij, expertise, kwaliteit, referenties, contact)
 privacyverklaring.html   Privacyverklaring (AVG)
 klachtenregeling.html    Klachtenregeling (Wkkgz)
+404.html                 Pagina voor adressen die niet bestaan
+vercel.json              Vercel-instellingen: geen build-stap, beveiligingsheaders, caching
+.vercelignore            Bestanden die niet online komen (deze README)
 assets/css/style.css     Alle opmaak; kleuren staan bovenaan als variabelen (:root)
 assets/js/main.js        Mobiel menu, actieve menu-item, jaartal in de footer
 assets/fonts/            Inter en Inter Tight, lokaal gehost (geen Google Fonts, geen cookies)
@@ -37,11 +41,48 @@ en ga naar http://localhost:8000.
 - De accentkleur aanpassen? Wijzig `--accent` en `--accent-light` in `assets/css/style.css`
   en de kleur `#2dd4bf` in de logo-SVG's (`favicon.svg` en de headers/footers van de HTML-pagina's).
 
+## Online zetten via Vercel
+
+Er is geen build-stap nodig: Vercel zet de bestanden zoals ze zijn online. Alle instellingen staan
+al in `vercel.json`.
+
+### 1. Project aanmaken
+
+1. Ga naar [vercel.com](https://vercel.com) en log in met je GitHub-account (of maak een gratis
+   Hobby-account aan).
+2. Kies **Add New… → Project** en importeer de repository `StephvanHoffe/Van-Hoffe-BTC`.
+   Staat hij er niet tussen? Kies dan **Adjust GitHub App Permissions** en geef Vercel toegang
+   tot deze repository.
+3. Laat alle instellingen staan zoals Vercel ze voorstelt (Framework Preset: *Other*, geen
+   Build Command, geen Output Directory) en klik op **Deploy**.
+4. Na ongeveer een minuut staat de site online op een adres als `van-hoffe-btc.vercel.app`.
+
+Vercel publiceert de *standaardbranch* van de repository als live website. Dat is nu
+`claude/wonderful-thompson-6ki4or`. Elke nieuwe wijziging op die branch komt daarna automatisch
+online. Wil je een andere branch live hebben (bijvoorbeeld `main`), wijzig dat dan in Vercel via
+**Settings → Environments → Production → Branch Tracking**.
+
+### 2. Eigen domein koppelen (vanhoffe-btc.nl)
+
+1. Ga in het project naar **Settings → Domains** en voeg `vanhoffe-btc.nl` toe.
+2. Voeg ook `www.vanhoffe-btc.nl` toe en laat dat doorverwijzen naar `vanhoffe-btc.nl`
+   (Vercel biedt dit zelf aan).
+3. Vercel toont welke DNS-records je moet aanmaken (meestal een A-record voor `vanhoffe-btc.nl`
+   en een CNAME-record voor `www`). Voeg precies die waarden toe in het DNS-beheer van de partij
+   waar je het domein hebt geregistreerd.
+4. Het HTTPS-certificaat regelt Vercel automatisch zodra de DNS-records actief zijn
+   (meestal binnen een uur, soms tot 48 uur).
+
+**Let op je e-mail:** pas alleen de A- en CNAME-records voor de website aan. Laat de MX-records
+(en eventuele SPF/DKIM-records) staan, anders komt er geen mail meer binnen op
+steph@vanhoffe-btc.nl. Verhuis de nameservers niet naar Vercel, tenzij je die mailrecords daar
+ook opnieuw aanmaakt.
+
 ## Domein
 
 In de pagina's, `robots.txt` en `sitemap.xml` is uitgegaan van het domein
-`https://vanhoffe-btc.nl/`. Gebruik je een ander domein (bijvoorbeeld met `www.`), pas dat dan
-op die plekken aan.
+`https://vanhoffe-btc.nl/` (zonder `www`). Kies je in Vercel `www.vanhoffe-btc.nl` als hoofdadres,
+pas het domein dan op die plekken aan.
 
 ## Kwaliteit & registraties
 
