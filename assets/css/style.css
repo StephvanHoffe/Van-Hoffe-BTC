@@ -591,6 +591,18 @@ ul {
   font-weight: 600;
 }
 
+.hero-lead a {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.hero-lead a:hover {
+  color: var(--accent);
+}
+
 .hero-figure {
   position: relative;
   margin: 0;
